@@ -1,0 +1,46 @@
+{
+	"Connection" : {
+		"Headers" : {
+			"Content-type" : "application/json; charset=UTF-8",
+			"Access-Control-Allow-Origin" : "http://localhost/",
+			"Access-Control-Allow-Methods" : "GET, PUT, POST, DELETE"
+		}
+	},
+	"Database" : {
+		"host" : "localhost",
+		"port" : "3306",
+		"dbname" : "estacionamento",
+		"user" : "root",
+		"password" : ""
+	},
+	"Class" : [
+		{
+			"name" : "veiculo",
+			"attributes" : [
+				"id_veiculo",
+				"modelo",
+				"marca",
+				"placa",
+				"cor"
+			]
+		},
+		{
+			"name" : "vaga",
+			"attributes" : [
+				"id_vaga",
+				"entrada",
+				"saida",
+				"localizacao",
+				"id_veiculo"
+			]
+		},
+		{
+			"name" : "valor",
+			"attributes" : [
+				"id_valor",
+				"preco",
+				"valor_data"
+			]
+		}
+	]
+}
